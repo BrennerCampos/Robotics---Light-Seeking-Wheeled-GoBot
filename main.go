@@ -9,6 +9,7 @@ import (
 	"time"
 )
 
+// hi this is marie
 //robotRunLoop is the main function for the robot, the gobot framework
 //will spawn a new thread in the NewRobot factory functin and run this
 //function in that new thread. Do all of your work in this function and
