@@ -18,6 +18,8 @@ import (
 func robotRunLoop(lightSensor *aio.GroveLightSensorDriver, soundSensor *aio.GroveSoundSensorDriver, gpg *g.Driver) {
 	ledOn := true
 
+	// hey this is a test
+
 	for {
 
 		sensorVal, err := lightSensor.Read()
