@@ -9,6 +9,7 @@ import (
 	"time"
 )
 
+// hi this is marie
 //robotRunLoop is the main function for the robot, the gobot framework
 //will spawn a new thread in the NewRobot factory functin and run this
 //function in that new thread. Do all of your work in this function and
@@ -17,6 +18,8 @@ import (
 //add
 func robotRunLoop(lightSensor *aio.GroveLightSensorDriver, soundSensor *aio.GroveSoundSensorDriver, gpg *g.Driver) {
 	ledOn := true
+
+	// hey this is a test ~~~
 
 	for {
 		sensorVal, err := lightSensor.Read()
