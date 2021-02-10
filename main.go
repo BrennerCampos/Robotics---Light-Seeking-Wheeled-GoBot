@@ -52,19 +52,16 @@ func robotRunLoop(lightSensor *aio.GroveLightSensorDriver, soundSensor *aio.Grov
 
 		// assign code below
 
-		//if sensorVal <= 1000{
-		//	//gpg.SetLED(1, 200, 200, 200)
-		//	ledOn = true
-		//} else {
-		//	ledOn = false
-		//}
+		if sensorVal <= 1000 {
+			gpg.SetLED(1, 200, 200, 200)
+			ledOn = true
+		} else {
+			ledOn = false
+		}
 
-		/*
-			if sensorVal > 1000 {
-				gpg.SetMotorDps(g.MOTOR_LEFT, 20)
-			}
-
-		*/
+		if sensorVal > 1000 {
+			gpg.SetMotorDps(g.MOTOR_LEFT, 20)
+		}
 
 		//gpg.SetMotorDps(g,  20)
 		//gpg.Start()
