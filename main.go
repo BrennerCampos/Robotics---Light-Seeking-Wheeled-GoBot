@@ -19,7 +19,6 @@ func robotRunLoop(lightSensor *aio.GroveLightSensorDriver, soundSensor *aio.Grov
 	ledOn := true
 
 	for {
-
 		sensorVal, err := lightSensor.Read()
 		if err != nil {
 			fmt.Errorf("Error reading light sensor %+v", err)
