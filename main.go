@@ -27,7 +27,7 @@ func robotRunLoop(lightSensor *aio.GroveLightSensorDriver, lightSensor2 *aio.Gro
 			fmt.Errorf("Error reading light sensor %+v", err)
 		}
 		//soundSensorVal, err := soundSensor.Read()
-		sensorVal2, err := lightSensor.Read()
+		sensorVal2, err := lightSensor2.Read()
 		if err != nil {
 			fmt.Errorf("Error reading from Sound Sensor %+v", err)
 		}
@@ -61,9 +61,9 @@ func robotRunLoop(lightSensor *aio.GroveLightSensorDriver, lightSensor2 *aio.Gro
 			ledOn = false
 		}
 
-		if sensorVal > 1000 {
-			gpg.SetMotorDps(g.MOTOR_LEFT, 20)
-		}
+		//if sensorVal > 1000 {
+		//	gpg.SetMotorDps(g.MOTOR_LEFT, 20)
+		//}
 
 		//gpg.SetMotorDps(g,  20)
 		//gpg.Start()
