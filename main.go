@@ -64,6 +64,9 @@ func robotRunLoop(lightSensor *aio.GroveLightSensorDriver, lightSensor2 *aio.Gro
 		if sensorVal > 1000 && sensorVal < 2800 {
 			gpg.SetMotorDps(g.MOTOR_LEFT, 20)
 			gpg.SetMotorDps(g.MOTOR_RIGHT, 20)
+		} else {
+			gpg.SetMotorDps(g.MOTOR_LEFT, 0)
+			gpg.SetMotorDps(g.MOTOR_RIGHT, 0)
 		}
 
 		// extra comment
