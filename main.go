@@ -65,6 +65,8 @@ func robotRunLoop(lightSensor *aio.GroveLightSensorDriver, lightSensor2 *aio.Gro
 		//	gpg.SetMotorDps(g.MOTOR_LEFT, 20)
 		//}
 
+		// extra comment
+
 		//gpg.SetMotorDps(g,  20)
 		//gpg.Start()
 	}
