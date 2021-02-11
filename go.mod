@@ -14,7 +14,7 @@ require (
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/urfave/cli v1.22.5 // indirect
 	github.com/veandco/go-sdl2 v0.4.5 // indirect
-	gobot.io/x/gobot v1.15.0
+	gobot.io/x/gobot v1.14.0
 	gocv.io/x/gocv v0.26.0 // indirect
 	golang.org/x/crypto v0.0.0-20201221181555-eec23a3978ad // indirect
 	golang.org/x/net v0.0.0-20210119194325-5f4716e94777 // indirect

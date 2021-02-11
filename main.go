@@ -33,7 +33,7 @@ func robotRunLoop(lightSensor *aio.GroveLightSensorDriver, lightSensor2 *aio.Gro
 		}
 		fmt.Println("Light (AD_2_1 Value is ", sensorVal)
 		fmt.Println("Light (AD_1_1 Value is ", sensorVal2)
-		fmt.Println("Sound Value is ", sensorVal2)
+		//fmt.Println("Sound Value is ", sensorVal2)
 		time.Sleep(time.Second)
 		gpg.SetLED(1, 200, 200, 200)
 
